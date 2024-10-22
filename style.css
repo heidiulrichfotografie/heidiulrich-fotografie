@@ -222,11 +222,20 @@ h2, h3, h4, h5, h6 {
   line-height: 1; /* Adjusts space between letters */
   letter-spacing: 0; /* Ensures no extra space between letters */
   white-space: nowrap; /* Prevents breaks between words */
+  font-weight: 400;
+}
+
+.h1-custom-2 {
+  font-size: calc(2.1em + 4.1vw);
+  font-family: 'Erica One', sans-serif; 
+  text-align: left;
+  font-weight: 400;
 }
 
 .h2-custom-1 {
   font-size: 6.2rem;
   font-family: 'Erica One', sans-serif; 
+  font-weight: 400;
 }
 
 h2 { 
@@ -294,6 +303,11 @@ a {
 
 p { 
   color: var(--dark); 
+}
+
+.copyright {
+  color: white;
+  margin-bottom: -1rem;
 }
 
 .link-box-over {
@@ -517,8 +531,34 @@ header nav a {
     font-size: 1.7rem;
 }
 
+.fa-instagram {
+  font-size: 4rem !important;
+  margin-top: 1rem;
+}
+
+.sub-links {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pajurama {
+  color: white;
+  margin-top: 2rem;
+}
+
 
 /* ------------ Footer Styles -------------- */
+
+.email-footer {
+  border: 3px solid var(--v-light);
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Share Tech Mono", monospace;
+  padding: 0.5rem 1rem ;
+  margin-top: 1rem;
+}
 
 footer a {
   text-align: center;
@@ -529,12 +569,13 @@ footer a {
 }
 
 footer nav a {
-  text-align: right;
+  text-align: left;
   display: block;
   text-decoration: none;
   padding: 0.2rem 0 0.2rem 0.2rem;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 .fa-brands {
@@ -544,7 +585,7 @@ footer nav a {
 
 
 .pajurama-logo {
-  width: 6rem;
+  width: 8rem;
   border-bottom: none;
 }
 
