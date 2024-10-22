@@ -105,10 +105,22 @@ html {
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+.margin-t-minus-3 {
+  margin-top: -3rem;
+}
+
+.margin-t-minus-9 {
+  margin-top: -9rem;
+}
+
+.margin-t-minus-16 {
+  margin-top: -16rem;
+}
+
 
 .relative { position: relative;}
-.block { position: block;}
-.inline-block { position: inline-block;}
+.block { display: block;}
+.inline-block { display: inline-block; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
@@ -203,16 +215,25 @@ h2, h3, h4, h5, h6 {
 }
 
 .h1-custom {
-  font-size: 15rem;
+  font-size: 10rem;
   font-family: 'Erica One', sans-serif; 
   color: var(--light);
-  transform: rotate(90deg);
+  writing-mode: vertical-rl;
+  line-height: 1; /* Adjusts space between letters */
+  letter-spacing: 0; /* Ensures no extra space between letters */
+  white-space: nowrap; /* Prevents breaks between words */
+}
+
+.h2-custom-1 {
+  font-size: 6.2rem;
+  font-family: 'Erica One', sans-serif; 
 }
 
 h2 { 
-  font-size: 3rem;
+  font-size: 3.7rem;
   font-family: 'Erica One', sans-serif; 
   letter-spacing: 1px;
+  font-weight: 400;
  }
 
 h3 { font-size: 1.8rem; }
@@ -261,37 +282,69 @@ a {
     color: inherit;
 }
 
-a:hover {
-  color: var(--featured-text); 
-}
 
 p a {
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-p a:hover { 
-  color: var(--featured-text); 
+a {
+  text-decoration: none;
 }
 
-.button { 
+p { 
+  color: var(--dark); 
+}
+
+.link-box-over {
+  padding: 0.25rem 1rem;
+  display: inline-block;
+}
+
+.link-box {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline {
+  background-color: var(--v-light);
+  height: 0;
+  width: 100%;
+  position: absolute;
+  transition: 0.3s;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 10rem;
+}
+
+.link-box:hover .link-underline {
+  height: 15px;
+}
+
+.button-text { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
-    padding: 0.5rem 1.5rem;
     font-family: "Erica One", sans-serif;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--v-light);
-    transition: 0.3s;
+    font-size: 2.2rem;
+    color: var(--dark);
 }
 
-.button:hover {
-  border-bottom: 5px solid var(--v-light);
+.button-underline {
+  background-color: var(--v-light);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: 0.3s;
+  bottom: 0;
+  z-index: -1;
 }
 
-.button:hover {
-    color: var(--featured-text);
+
+.button-div:hover .button-underline {
+  height: 10px;
 }
+
 
 .subtle-button {
   text-decoration: none;
@@ -316,13 +369,145 @@ p a:hover {
 }
 
 
+.pa3 {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-family: "Erica One", sans-serif;
+  font-size: 6rem;
+  color: var(--medium);
+  font-weight: 400;
+}
+
+.pa4 {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  color: var(--medium);
+}
+
+.pa5 {
+  position: absolute;
+  width: 42rem;
+  bottom: -10rem;
+  right: -9rem;
+}
+
+.pa6 {
+  position: absolute;
+  top: -20rem;
+  width: 20rem;
+  right: 1rem;
+}
+
+
+/* ------------ CREATIVE SHOP EFFECT -------------- */
+
+.shop-line {
+  width: 50%;
+  position: absolute;
+  height: 14px;
+  background-color: var(--v-light);
+  transform: translateX(100%);
+  border-radius: 10rem;
+  transition: 0.5s;
+}
+
+.shop-button-huge:hover .shop-line {
+  transform: translateX(0);
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+  font-family: "Erica One", sans-serif;
+  font-size: 22rem;
+}
+
+.title-word-1 {.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+
+
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+
+
 /* ------------ Header & Hamburger Menu -------------- */
 header {
     padding: 1rem 5%;
 }
 
 header nav a {
-    padding: 0.25rem 1rem;
     display: inline-block;
     text-decoration: none;
     font-family: "Share Tech Mono", monospace;
@@ -331,9 +516,7 @@ header nav a {
     color: var(--dark);
     font-size: 1.7rem;
 }
-nav a:hover {
-  color: var(--featured-text);
-}
+
 
 /* ------------ Footer Styles -------------- */
 
@@ -684,10 +867,10 @@ hr.short.center {
   vertical-align: top;
 }
 
-/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* ------- MD Media Query (75em / 1200px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
-@media(max-width:64em) {
+@media(max-width:75em) {
 
 	.show-md { display: block; }
 	.hide-md { display: none;  }
