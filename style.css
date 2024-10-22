@@ -118,6 +118,11 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
+.polaroid {
+  padding: 0.4rem 0.4rem 5rem 0.4rem;
+  border: 1px solid var(--dark);
+}
+
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
@@ -178,7 +183,7 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: 'Erica One', sans-serif;  /* Add your font here */ 
   color: var(--dark-text);
 }
 
@@ -187,7 +192,29 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
 }
 
-h2 { font-size: 2rem; }
+.text-lila {
+  color: var(--medium);
+}
+
+.accent-font {
+  font-size: 5rem;
+  font-family: 'Erica One', sans-serif; 
+  color: var(--medium);
+}
+
+.h1-custom {
+  font-size: 15rem;
+  font-family: 'Erica One', sans-serif; 
+  color: var(--light);
+  transform: rotate(90deg);
+}
+
+h2 { 
+  font-size: 3rem;
+  font-family: 'Erica One', sans-serif; 
+  letter-spacing: 1px;
+ }
+
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
@@ -196,9 +223,10 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
+  font-family: 'Share Tech Mono', monospace; 
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: var(--dark);
 }
 
 h2:last-child, 
@@ -251,7 +279,14 @@ p a:hover {
     text-decoration: none;
     line-height: 1;
     padding: 0.5rem 1.5rem;
-    border: 1px solid;
+    font-family: "Erica One", sans-serif;
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--v-light);
+    transition: 0.3s;
+}
+
+.button:hover {
+  border-bottom: 5px solid var(--v-light);
 }
 
 .button:hover {
@@ -266,16 +301,35 @@ p a:hover {
 /* suggested additional styles 
 - .button-inverted, .button-subtle, .button-lg  */
 
+/* ------------ Position Absolute -------------- */
+
+.pa1 {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+}
+
+.pa2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 
 /* ------------ Header & Hamburger Menu -------------- */
 header {
     padding: 1rem 5%;
 }
 
-nav a {
-    padding: 0.25rem 0.5rem;
+header nav a {
+    padding: 0.25rem 1rem;
     display: inline-block;
     text-decoration: none;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+    font-size: 1.7rem;
 }
 nav a:hover {
   color: var(--featured-text);
