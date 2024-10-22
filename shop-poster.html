@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Poster, Leinwände & Postkarten | Heidi Ulrich Fotografie
+pop-up: true
 seo:
   title: 
   description:
@@ -8,6 +9,15 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+popup-gallery: true
+gallery-background: bg-white
+gallery:
+  - pop-up-background_image: /images/placeholder.png  
+    background_image: /images/placeholder.png
+  - pop-up-background_image: /images/placeholder.png  
+    background_image: /images/placeholder.png
+  - pop-up-background_image: /images/placeholder.png  
+    background_image: /images/placeholder.png
 ---
 
 <section class="capped-width">
@@ -50,3 +60,42 @@ seo:
         </div>
     </div>
 </section>
+
+
+{% if page.popup-gallery == true %}
+
+
+<section class="padded {{page.gallery-background}}">
+    <div class="portfolio" id="lightgallery">
+
+        {% for item in page.gallery %}
+
+        <a class="gallery-container" href="{{item.pop-up-background_image}}"> 
+            <img src="{{item.background_image}}">
+        </a>
+
+        {% endfor %}
+
+    </div>
+</section>
+
+{% else %}
+
+ <!------------------------------- standard Responsive Image Gallery -------------------------------->
+
+ <section class="padded {{page.gallery-background}}">
+    <h2 class="center"> Standard Gallery </h2>
+    <div class="portfolio">
+
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}"> 
+             <div class="bg-image {{item.aspect-ratio}}" 
+                  style="background-image: url('{{item.background_image}}');"> 
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
+
+{% endif %}

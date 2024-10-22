@@ -560,6 +560,57 @@ p {
 }
 
 
+
+
+/* Pop Up Light Gallery */
+
+.portfolio {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.lg-backdrop.in {
+  opacity: 0.94;
+} 
+
+.lg-backdrop {
+  background-color: var(--light);
+}
+
+.lg-toolbar .lg-icon {
+  color: var(--dark-text);
+}
+
+.lg-counter {
+  color: var(--dark-text);
+}
+
+.lg-next, .lg-prev {
+  color: var(--dark-text);
+  background-color: transparent;
+}
+
+.lg-next {
+  right: 8px;
+}
+
+.lg-prev {
+  left: 8px;
+}
+
+.lg-sub-html {
+  background-color: var(--light);
+}
+
+.lg-outer .lg-object{
+  max-height: 90vh;
+  max-width: 80vw;
+}
+
+.lg-next:hover:not(.disabled), .lg-prev:hover:not(.disabled) {
+  color: var(--dark-text);
+}
+
 /* ------------ Header & Hamburger Menu -------------- */
 header {
     padding: 1rem 5%;
