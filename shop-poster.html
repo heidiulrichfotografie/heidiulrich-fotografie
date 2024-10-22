@@ -40,7 +40,7 @@ gallery:
             <ol style="margin-left: 2rem;">
                 <li> Format aussuchen </li>
                 <li> Bild aussuchen </li>
-                <li> Format und Bild mit Bildnummer in Bestellformular schreiben und bestellen </li>
+                <li> Format und Bild mit Bildnummer in Bestellformular schreiben und bestellen und Mengenangabe angeben</li>
             </ol>
         </div>
         <div class="col-12 padded padded-b-0 left text-lila editable">
@@ -111,3 +111,37 @@ gallery:
 </section>
 
 {% endif %}
+
+
+<section class="padded capped-width-v-narrow">
+    <div class="center editable text-lila">
+        <h2 class="margin-b-2"> Bestellformular </h2>
+    </div>
+    <form class="margin-t-2" action="#"
+    method="POST">
+        <label for="_vorname"> Vorname </label>
+        <input type="text" name="_vorname" id="_vorname" />
+
+        <label for="_nachname"> Nachname </label>
+        <input type="text" name="_nachname" id="_nachname" />
+
+        <label for="_adresse"> Strasse, Nr. </label>
+        <input type="text" name="_adresse" id="_adresse" />
+
+        <label for="_wohnort"> PLZ, Wohnort </label>
+        <input type="text" name="_wohnort" id="_wohnort" />
+
+        <label for="_replyto"> Email </label>
+        <input type="email" name="_replyto" id="_replyto" placeholder="" />
+
+        <label for="phone"> Telefonnummer </label>
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder=""> 
+   
+        <label for="message"> Bestellung?</label>
+        <textarea name="message" id="message" placeholder="1x Poster Laminiert glänzend - 50 x 70cm - Fr. 99.00 - BILD #999"></textarea>
+   
+        <button type="submit" class="button"> Abschicken </button>
+
+    </form>
+
+</section>
