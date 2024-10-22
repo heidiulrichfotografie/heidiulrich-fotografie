@@ -569,6 +569,12 @@ p {
   column-gap: 10px;
 }
 
+.gallery {
+  overflow: auto; /* Or overflow: hidden, depending on your need */
+}
+
+
+
 .lg-backdrop.in {
   opacity: 0.94;
 } 
@@ -1040,6 +1046,10 @@ hr.short.center {
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
+  .portfolio {
+    column-count: 2;
+}
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -1054,4 +1064,8 @@ hr.short.center {
       font-weight: 300;
       font-family: 'Martel', serif; 
     }
+
+    .portfolio {
+      column-count: 1;
+  }
 }
