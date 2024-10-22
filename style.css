@@ -238,6 +238,35 @@ h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.h2-custom-2 {
+  font-size: 4rem;
+  font-family: 'Erica One', sans-serif; 
+  font-weight: 400;
+}
+
+.h2-custom-3 {
+  font-size: 4rem;
+  font-family: 'Erica One', sans-serif; 
+  writing-mode: vertical-rl;
+  line-height: 1; /* Adjusts space between letters */
+  letter-spacing: 0; /* Ensures no extra space between letters */
+  white-space: nowrap; /* Prevents breaks between words */
+  font-weight: 400;
+  transform: rotate(180deg);
+}
+
+.h2-container {
+  display: flex;        /* Use flexbox to stack the elements */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+
+
+.poster-link {
+  transform: rotate(-90deg);
+}
+
 h2 { 
   font-size: 3.7rem;
   font-family: 'Erica One', sans-serif; 
@@ -416,6 +445,18 @@ p {
   right: 1rem;
 }
 
+.pa7 {
+  position: absolute;
+  right: -2rem;
+  bottom: 0;
+}
+
+.pa8 {
+  position: absolute;
+  right: -7rem;
+  transform: rotate(-90deg);
+  bottom: 5rem;
+}
 
 /* ------------ CREATIVE SHOP EFFECT -------------- */
 
