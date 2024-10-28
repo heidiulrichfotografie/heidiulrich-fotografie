@@ -135,6 +135,8 @@ html {
   border: 1px solid var(--dark);
 }
 
+.border-img { border: 2px solid var(--dark);}
+
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
@@ -445,7 +447,7 @@ p {
   position: absolute;
   top: -20rem;
   width: 20rem;
-  right: 1rem;
+  right: 4rem;
 }
 
 .pa7 {
