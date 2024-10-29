@@ -121,6 +121,7 @@ html {
 .relative { position: relative;}
 .block { display: block;}
 .inline-block { display: inline-block; }
+.inline { display: inline ; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
@@ -501,6 +502,12 @@ p {
   }
 }
 
+
+
+
+.flex-flip-normal {
+  flex-flow:row-reverse wrap;
+}
 
 /* ------------ CREATIVE SHOP EFFECT -------------- */
 
@@ -1058,10 +1065,7 @@ hr.short.center {
 	display: none; 
 }
 
-.inline { 
-  display: inline-block;
-  vertical-align: top;
-}
+
 
 /* ------- MD Media Query (75em / 1200px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
