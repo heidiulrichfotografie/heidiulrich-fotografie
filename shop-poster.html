@@ -40,8 +40,13 @@ gallery:
             <ol style="margin-left: 2rem;">
                 <li> Format aussuchen </li>
                 <li> Bild aussuchen </li>
-                <li> Format und Bild mit Bildnummer in Bestellformular schreiben und bestellen und Mengenangabe angeben</li>
+                <li> Screenshot machen vom Bild, das du bestellen möchtest </li>
+                <li> Format und Bild mit Bildnummer in Bestellformular schreiben, Mengenangabe angeben und Screenshot hinzufügen</li>
+                <li> Bestellen, juhuuuu :) </li>
             </ol>
+            <br>
+            <p> <em> Wenn du ein anderes Format bestellen möchtest oder ein Bild digital verwenden möchtest kannst du mich einfach kontaktieren. :) </em> </p>
+            <p> <em> Bei Abholung in 6440 Brunnen fallen die Versandkosten weg.  </em> </p>
         </div>
         <div class="col-12 padded padded-b-0 left text-lila editable">
             <h2> Formate </h2>
@@ -84,7 +89,10 @@ gallery:
 
         <a class="gallery-container" href="{{item.pop-up-background_image}}"> 
             <img src="{{item.background_image}}">
+
         </a>
+
+        <p class="copyright-sign">©HeidiUlrichFotografie </p>
 
         {% endfor %}
 
@@ -135,8 +143,11 @@ gallery:
         <input type="email" name="_replyto" id="_replyto" placeholder="" />
 
         <label for="phone"> Telefonnummer </label>
-        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder=""> 
-   
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="">
+        
+        <label for="files">Screenshots</label>
+        <input type="file" id="files" name="files" multiple>
+
         <label for="message"> Bestellung?</label>
         <textarea name="message" id="message" placeholder="1x Poster Laminiert glänzend - 50 x 70cm - Fr. 99.00 - BILD #999"></textarea>
    

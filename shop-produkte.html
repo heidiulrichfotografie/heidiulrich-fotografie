@@ -9,8 +9,95 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+produkte:
+  - kalender: true
+    title: 4000er Kalender
+    description_html: asdfjasdlfhjasldhflasjdfh
+    image: /images/placeholder.png
+    image_1: /images/placeholder.png
+    image_2: /images/placeholder.png
+    image_3: /images/placeholder.png
+    image_4: /images/placeholder.png
+    image_5: /images/placeholder.png
+    image_6: /images/placeholder.png
+    image_7: /images/placeholder.png
+    image_8: /images/placeholder.png
+    image_9: /images/placeholder.png
+    image_10: /images/placeholder.png
+    image_11: /images/placeholder.png
+    image_12: /images/placeholder.png
+  - kalender: true
+    title: 4000er Kalender
+    description_html: asdfjasdlfhjasldhflasjdfh
+    image: /images/placeholder.png
+    image_1: /images/placeholder.png
+    image_2: /images/placeholder.png
+    image_3: /images/placeholder.png
+    image_4: /images/placeholder.png
+    image_5: /images/placeholder.png
+    image_6: /images/placeholder.png
+    image_7: /images/placeholder.png
+    image_8: /images/placeholder.png
+    image_9: /images/placeholder.png
+    image_10: /images/placeholder.png
+    image_11: /images/placeholder.png
+    image_12: /images/placeholder.png
 ---
 
+<section class="capped-width">
+    <div class="grid">
+        <div class="col-12 padded padded-b-0 editable text-lila">
+            <h2> Poster, Leinwände, Postkarten </h2>
+            <p class="emphasis"> Wie funktionierts? </p>
+            <ol style="margin-left: 2rem;">
+                <li> Format aussuchen </li>
+                <li> Bild aussuchen </li>
+                <li> Screenshot machen vom Bild, das du bestellen möchtest </li>
+                <li> Format und Bild mit Bildnummer in Bestellformular schreiben, Mengenangabe angeben und Screenshot hinzufügen</li>
+                <li> Bestellen, juhuuuu :) </li>
+            </ol>
+            <br>
+            <p> <em> Wenn du ein anderes Format bestellen möchtest oder ein Bild digital verwenden möchtest kannst du mich einfach kontaktieren. :) </em> </p>
+            <p> <em> Bei Abholung in 6440 Brunnen fallen die Versandkosten weg.  </em> </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Produkte -->
+<section>
+
+    {% for produkt in page.produkte %}
+
+            <section class="bg-produkte">
+                <div class="text-lila center capped-width padded">
+                    <h1 class=""> {{ produkt.title }}</h1>
+                    <br>
+                    <img src="{{ produkt.image }}">
+                    <br><br>
+                    <p> {{ produkt.description_html }} </p>
+                    <br>
+                    <div class="grid">
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_1 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_2 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_3 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_4 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_5 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_6 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_7 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_8 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_9 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_10 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_11 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_12 }}"> </div>
+                    </div>
+                </div>
+            </section>
+
+
+    {% endfor %}
+
+</section>
 
 
 <section class="padded capped-width-v-narrow">
@@ -36,6 +123,9 @@ seo:
 
         <label for="phone"> Telefonnummer </label>
         <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder=""> 
+
+        <label for="files">Screenshots</label>
+        <input type="file" id="files" name="files" multiple>
    
         <label for="message"> Bestellung?</label>
         <textarea name="message" id="message" placeholder="1x Poster Laminiert glänzend - 50 x 70cm - Fr. 99.00 - BILD #999"></textarea>

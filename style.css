@@ -130,6 +130,10 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
+.bg-produkte:nth-child(even) {
+  background-color: #f6f7f0;
+}
+
 .polaroid {
   padding: 0.4rem 0.4rem 5rem 0.4rem;
   border: 1px solid var(--dark);
@@ -199,6 +203,11 @@ a.bg-image { display: block;}
 body {
   font-family: 'Erica One', sans-serif;  /* Add your font here */ 
   color: var(--dark-text);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -291,6 +300,13 @@ p, li {
   font-weight: 200;
   font-size: 1.2rem;
   color: var(--dark);
+}
+.copyright-sign {
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
 }
 
 h2:last-child, 
@@ -578,23 +594,23 @@ p {
 
 
 .lg-backdrop.in {
-  opacity: 0.94;
+  opacity: 1;
 } 
 
 .lg-backdrop {
-  background-color: var(--light);
+  background-color: black;
 }
 
 .lg-toolbar .lg-icon {
-  color: var(--dark-text);
+  color: white;
 }
 
 .lg-counter {
-  color: var(--dark-text);
+  color: white;
 }
 
 .lg-next, .lg-prev {
-  color: var(--dark-text);
+  color: white;
   background-color: transparent;
 }
 
@@ -615,9 +631,13 @@ p {
   max-width: 80vw;
 }
 
-.lg-next:hover:not(.disabled), .lg-prev:hover:not(.disabled) {
-  color: var(--dark-text);
+.lg-next:hover {
+  background-color: transparent !important;
 }
+
+/* .lg-next:hover:not(.disabled), .lg-prev:hover:not(.disabled) {
+  color: var(--dark-text);
+} */
 
 /* ------------ Header & Hamburger Menu -------------- */
 header {
