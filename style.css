@@ -281,6 +281,11 @@ h2, h3, h4, h5, h6 {
   align-items: flex-start; /* Align items to the start */
 }
 
+.h2-custom-4 {
+  font-size: 3rem;
+  font-family: 'Erica One', sans-serif; 
+  font-weight: 400;
+}
 
 
 .poster-link {
@@ -527,6 +532,26 @@ p {
   top: -2rem;
   right: 11rem;
   width: 30rem;
+}
+
+.pa13 {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 5.5rem;
+  font-family: "Erica One", sans-serif;
+  font-size: 3rem;
+  color: var(--medium);
+  font-weight: 400;
+}
+
+.pa14 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: "Erica One", sans-serif;
+  font-size: 3.5rem;
+  color: var(--medium);
+  font-weight: 400;
 }
 
 
