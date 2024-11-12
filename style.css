@@ -518,10 +518,16 @@ p {
 .pa11 {
   position: absolute;
   top: -2rem;
-  left: 4rem;
+  left: 10rem;
   width: 30rem;
 }
 
+.pa12 {
+  position: absolute;
+  top: -2rem;
+  right: 11rem;
+  width: 30rem;
+}
 
 
 .flex-flip-normal {
