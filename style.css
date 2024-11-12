@@ -496,6 +496,8 @@ p {
   animation: rotation 15s infinite linear;
 }
 
+
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -505,6 +507,20 @@ p {
   }
 }
 
+
+.pa10 {
+  position: absolute;
+  width: 42rem;
+  top: -5rem;
+  left: -9rem;
+}
+
+.pa11 {
+  position: absolute;
+  top: -2rem;
+  left: 4rem;
+  width: 30rem;
+}
 
 
 
