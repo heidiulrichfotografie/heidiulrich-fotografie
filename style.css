@@ -231,6 +231,9 @@ h2, h3, h4, h5, h6 {
   color: var(--medium);
 }
 
+.h1-shop { font-size: 24.9rem;
+  line-height: 1;  }
+
 .h1-custom {
   font-size: 10rem;
   font-family: 'Erica One', sans-serif; 
@@ -243,7 +246,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .h1-custom-2 {
-  font-size: calc(2.1em + 4.1vw);
+  font-size: 6rem;
   font-family: 'Erica One', sans-serif; 
   text-align: left;
   font-weight: 400;
@@ -605,6 +608,22 @@ p {
   font-weight: 800;
   font-size: 8.5vw;
   text-transform: uppercase;
+}
+
+
+
+
+#test {
+  background: linear-gradient(var(--v-light), var(--v-light)) left no-repeat, var(--light);
+  background-size: 0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+#test:hover {
+  background-size: 100% 100%;
 }
 
 
