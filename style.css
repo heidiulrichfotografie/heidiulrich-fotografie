@@ -210,6 +210,7 @@ a.bg-image { display: block;}
 body {
   font-family: 'Erica One', sans-serif;  /* Add your font here */ 
   color: var(--dark-text);
+  overflow-x: hidden;
 
 }
 
@@ -233,8 +234,23 @@ h2, h3, h4, h5, h6 {
   color: var(--medium);
 }
 
-.h1-shop { font-size: 24.9rem;
-  line-height: 1;  }
+.h1-shop { 
+  font-size: 24.9rem;
+  line-height: 1; 
+ }
+
+ @media (max-width: 1244px) {
+  .h1-shop {
+    font-size: calc(1em + 31vw);
+  }
+ }
+
+ @media (max-width: 846px) {
+  .h1-shop {
+    font-size: calc(1em + 28vw);
+    margin-top: 1.5rem;
+  }
+}
 
 .h1-custom {
   font-size: 10rem;
@@ -560,6 +576,8 @@ p {
 .flex-flip-normal {
   flex-flow:row-reverse wrap;
 }
+
+
 
 /* ------------ CREATIVE SHOP EFFECT -------------- */
 
@@ -1143,6 +1161,18 @@ hr.short.center {
 	.show-md { display: block; }
 	.hide-md { display: none;  }
 
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  .h1-custom {
+    font-size: 9rem;
+  }
+
+  .pa3 {
+    font-size: 5rem;
+  }
+
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1176,6 +1206,21 @@ hr.short.center {
     column-count: 2;
 }
 
+h2 {
+  font-size: 2.3rem;
+}
+
+.pa5 {
+  position: absolute;
+  width: 42rem;
+  bottom: -8rem;
+  right: -9rem;
+}
+
+.pa3 {
+  font-size: 3rem;
+}
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -1194,4 +1239,38 @@ hr.short.center {
     .portfolio {
       column-count: 1;
   }
+
+
+  .pa1 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 13rem;
+  }
+
+  .pa5 {
+    position: static;
+    width: 0;
+  }
+
+  .margin-t-minus-16 {
+    margin-top: 0;
+    padding: 5%;
+  }
+
+  .xs-no-tall { min-height: none;}
+  .margin-t-minus-9 { margin-top: 0;}
+
+  .xs-flex-flip {
+    flex-flow: wrap-reverse;
+  }
+
+  .pa3 {
+    font-size: 2rem;
+  }
+
+  .pa4 {
+    font-size: 1rem;
+  }
+
 }
