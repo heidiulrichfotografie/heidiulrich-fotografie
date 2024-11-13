@@ -3,7 +3,7 @@ layout: default
 title: Wandkalender | Heidi Ulrich Fotografie
 pop-up: false
 seo:
-  title: 
+  title:
   description:
   social_image:
   twitter_card:
@@ -12,7 +12,9 @@ seo:
 produkte:
   - kalender: true
     title: 4000er Kalender
-    description_html: asdfjasdlfhjasldhflasjdfh
+    description_html: >-
+      Dies ist mein Wandkalender<ul><li><p>A4 Schwarz</p></li><li><p>12
+      eiten</p></li><li><p></p></li></ul>
     image: /images/placeholder.png
     image_1: /images/placeholder.png
     image_2: /images/placeholder.png
@@ -43,7 +45,6 @@ produkte:
     image_11: /images/placeholder.png
     image_12: /images/placeholder.png
 ---
-
 <section class="padded bg-light text-white capped-width margin-t-2 xs-margin-t-0 center">
     <div class="editable">
       <h3> Ich hatte einen Unfall und kann somit vorübergehend keine Produkte versenden. Daher ist momentan die Bestellung nur auf Abholung in 6440 Brunnen möglich. </h3>
@@ -63,7 +64,7 @@ produkte:
                 <li> Bestellen, juhuuuu :) </li>
                 <li> Betrag an +41 79 733 09 36 per TWINT bezahlen. (Wenn du kein TWINT hast kannst du mich einfach kontaktieren.)</li>
             </ol>
-            <br>
+            <br />
             <p> <em> Wenn du ein anderes Format bestellen möchtest oder ein Bild digital verwenden möchtest kannst du mich einfach kontaktieren. :) </em> </p>
             <p> <em> Bei Abholung in 6440 Brunnen fallen die Versandkosten weg.  </em> </p>
         </div>
@@ -78,25 +79,25 @@ produkte:
 
             <section class="bg-produkte">
                 <div class="text-lila center capped-width padded">
-                    <h1 class=""> {{ produkt.title }}</h1>
-                    <br>
-                    <img src="{{ produkt.image }}">
-                    <br><br>
+                    <h1> {{ produkt.title }}</h1>
+                    <br />
+                    <img src="{{ produkt.image }}" />
+                    <br /><br />
                     <p> {{ produkt.description_html }} </p>
-                    <br>
+                    <br />
                     <div class="grid">
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_1 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_2 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_3 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_4 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_5 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_6 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_7 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_8 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_9 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_10 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_11 }}"> </div>
-                        <div class="col-3 padded-1"> <img src="{{ produkt.image_12 }}"> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_1 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_2 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_3 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_4 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_5 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_6 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_7 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_8 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_9 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_10 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_11 }}" /> </div>
+                        <div class="col-3 padded-1"> <img src="{{ produkt.image_12 }}" /> </div>
                     </div>
                 </div>
             </section>
@@ -111,8 +112,7 @@ produkte:
     <div class="center editable text-lila">
         <h2 class="margin-b-2"> Bestellformular </h2>
     </div>
-    <form class="margin-t-2" action="#"
-    method="POST">
+    <form class="margin-t-2" action="#" method="POST">
         <label for="_vorname"> Vorname </label>
         <input type="text" name="_vorname" id="_vorname" />
 
@@ -129,10 +129,10 @@ produkte:
         <input type="email" name="_replyto" id="_replyto" placeholder="" />
 
         <label for="phone"> Telefonnummer </label>
-        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder=""> 
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="" /> 
 
         <label for="files">Screenshots</label>
-        <input type="file" id="files" name="files" multiple>
+        <input type="file" id="files" name="files" multiple />
    
         <label for="message"> Bestellung?</label>
         <textarea name="message" id="message" placeholder="1x Poster Laminiert glänzend - 50 x 70cm - Fr. 99.00 - BILD #999"></textarea>
