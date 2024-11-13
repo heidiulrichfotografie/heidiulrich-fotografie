@@ -402,6 +402,7 @@ p {
 .copyright {
   color: white;
   margin-bottom: -1rem;
+  font-size: 0.9rem;
 }
 
 .link-box-over {
@@ -796,6 +797,7 @@ header nav a {
 .pajurama {
   color: white;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 
@@ -926,7 +928,7 @@ footer nav a {
   margin-bottom: 10px;
 }
 .burger-button.active span{
-  border-color: var(--light);
+  border-color: white;
   background-color:white;
 }
 
@@ -993,7 +995,7 @@ footer nav a {
 }
 
 .mobile-menu {
-  background-color: var(--featured);
+  background-color: var(--light);
   padding: 0 5% 5% 5%;
   position: fixed; 
   z-index: 1;
@@ -1010,7 +1012,16 @@ footer nav a {
 
 .mobile-menu.active {
   right: 0;
-  left: 20vw;
+  left: 0;
+}
+
+.mobile-menu-nav {
+  margin-top: 2em;
+}
+
+.mobile-menu-nav a{
+  font-size: 1.9rem !important;
+  font-weight: 400;
 }
 
 .logo-mobile-menu {
@@ -1022,11 +1033,9 @@ footer nav a {
 }
 
 .mobile-menu a {
-  font-family: 'Poiret One', sans-serif;
   display: block;
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
-  color: var(--dark-text)
 } 
 
 .mobile-nav {
@@ -1035,6 +1044,10 @@ footer nav a {
   display: block
 }
 
+.mobile-logo {
+  margin-top: 1rem;
+  width: 12rem;
+}
 
 /* ------------ Contact Forms  ----------------------- */
 
