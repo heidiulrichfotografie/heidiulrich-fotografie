@@ -3,7 +3,7 @@ layout: default
 title: Poster, Leinwände & Postkarten | Heidi Ulrich Fotografie
 pop-up: true
 seo:
-  title: 
+  title:
   description:
   social_image:
   twitter_card:
@@ -12,29 +12,28 @@ seo:
 popup-gallery: true
 gallery-background: bg-white
 gallery:
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
-  - pop-up-background_image: /images/placeholder.png  
+  - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
 ---
-
 <section class="padded bg-light text-white capped-width margin-t-2 xs-margin-t-0 center">
   <div class="editable">
-    <h3> Ich hatte einen Unfall und kann somit vorübergehend keine Produkte versenden. Daher ist momentan die Bestellung nur auf Abholung in 6440 Brunnen möglich. </h3>
+      <h3> Ich hatte einen Unfall und kann somit vorübergehend keine Produkte versenden. Daher ist momentan die Bestellung nur auf Abholung in 6440 Brunnen möglich..</h3>
   </div>
 </section>
 
@@ -51,7 +50,7 @@ gallery:
                 <li> Bestellen, juhuuuu :) </li>
                 <li> Betrag an +41 79 733 09 36 per TWINT bezahlen. (Wenn du kein TWINT hast kannst du mich einfach kontaktieren.)</li>
             </ol>
-            <br>
+            <br />
             <p> <em> Wenn du ein anderes Format bestellen möchtest oder ein Bild digital verwenden möchtest kannst du mich einfach kontaktieren. :) </em> </p>
             <p> <em> Bei Abholung in 6440 Brunnen fallen die Versandkosten weg.  </em> </p>
         </div>
@@ -100,7 +99,7 @@ gallery:
         {% for item in page.gallery %}
 
         <a class="gallery-container" href="{{item.pop-up-background_image}}"> 
-            <img src="{{item.background_image}}">
+            <img src="{{item.background_image}}" />
 
         </a>
 
@@ -119,8 +118,7 @@ gallery:
 
         {% for item in page.gallery %}
         <div class="{{item.column-size}}"> 
-             <div class="bg-image {{item.aspect-ratio}}" 
-                  style="background-image: url('{{item.background_image}}');"> 
+             <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
             </div>
         </div>
 
@@ -135,8 +133,7 @@ gallery:
     <div class="center editable text-lila">
         <h2 class="margin-b-2"> Bestellformular </h2>
     </div>
-    <form class="margin-t-2" action="#"
-    method="POST">
+    <form class="margin-t-2" action="#" method="POST">
         <label for="_vorname"> Vorname </label>
         <input type="text" name="_vorname" id="_vorname" />
 
@@ -153,10 +150,10 @@ gallery:
         <input type="email" name="_replyto" id="_replyto" placeholder="" />
 
         <label for="phone"> Telefonnummer </label>
-        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="">
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="" />
         
         <label for="files">Screenshots</label>
-        <input type="file" id="files" name="files" multiple>
+        <input type="file" id="files" name="files" multiple />
 
         <label for="message"> Bestellung?</label>
         <textarea name="message" id="message" placeholder="1x Poster Laminiert glänzend - 50 x 70cm - Fr. 99.00 - BILD #999"></textarea>
