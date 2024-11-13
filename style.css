@@ -530,6 +530,7 @@ p {
   top: 2rem;
   width: 10rem;
   animation: rotation 15s infinite linear;
+  z-index: 2;
 }
 
 
@@ -547,7 +548,7 @@ p {
 .pa10 {
   position: absolute;
   width: 42rem;
-  top: -5rem;
+  top: -11%;
   left: -9rem;
 }
 
@@ -567,8 +568,8 @@ p {
 
 .pa13 {
   position: absolute;
-  bottom: 4.5rem;
-  left: 5.5rem;
+  bottom: 0;
+  left: 1rem;
   font-family: "Erica One", sans-serif;
   font-size: 3rem;
   color: var(--medium);
@@ -1193,6 +1194,10 @@ hr.short.center {
     font-size: 9rem;
   }
 
+  .h2-custom-4 {
+    font-size:2.7rem;
+  }
+
   .pa3 {
     font-size: 5rem;
   }
@@ -1205,6 +1210,10 @@ hr.short.center {
     font-size: 1.7rem;
   }
 
+  .pa13 {
+    font-size: 2.8rem;
+  }
+
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1212,6 +1221,16 @@ hr.short.center {
 
 
 @media(max-width:48em) {
+
+  .pa10 {
+    position: static;
+    width: unset;
+  }
+  .sm-padded-0 { padding: 0;}
+  .sm-padded-t-1 {
+    padding-top: 1rem;
+  }
+  .sm-padded-t-2 { padding-top: 2rem;}
 
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
@@ -1238,6 +1257,10 @@ hr.short.center {
     column-count: 2;
 }
 
+.pa14 {
+  font-size: 2.3rem;
+}
+
 h2 {
   font-size: 2.3rem;
 }
@@ -1257,6 +1280,9 @@ h2 {
   font-size: 3.2rem;
 }
 
+.sm-padded { padding: 5%;}
+.sm-padded-t-0 { padding-top: 0;}
+
 .pa6 {
   position: absolute;
   top: -5rem;
@@ -1269,6 +1295,18 @@ footer nav a {
   text-align: center;
 }
 footer nav { margin-bottom: 1.4rem;}
+
+.pa13 {
+  font-size: 2.2rem;
+}
+
+.pa9 {
+  width: 8rem;
+}
+
+.h2-custom-4 {
+  font-size: 2.5rem;
+}
 
 }
 
@@ -1344,6 +1382,24 @@ footer nav { margin-bottom: 1.4rem;}
 
   .email-footer {
     font-size: 1.2rem;
+  }
+
+  .pa13 {
+    font-size: 1rem;
+  }
+
+  .pa9 {
+    width: 5rem;
+    top: -1rem;
+    right: 0.3rem;
+  }
+
+  .h2-custom-4 {
+    font-size: 1.5rem;
+  }
+
+  .pa14 {
+    font-size: 1.3rem;
   }
   
 }
