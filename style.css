@@ -720,7 +720,16 @@ p {
 .gallery {
   overflow: auto; /* Or overflow: hidden, depending on your need */
 }
+.lg-sub-html {
+  background-color: black !important;
+}
 
+.lg-sub-html h4 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Erica One', sans-serif; 
+}
 
 
 .lg-backdrop.in {
@@ -737,6 +746,7 @@ p {
 
 .lg-counter {
   color: white;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .lg-next, .lg-prev {

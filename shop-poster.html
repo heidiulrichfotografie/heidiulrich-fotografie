@@ -16,24 +16,34 @@ gallery-background: bg-white
 gallery:
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /images/placeholder.png
     background_image: /images/placeholder.png
+    bildnummer: 999
   - pop-up-background_image: /uploads/heidiulrich-fotografie-101.jpg
     background_image: /uploads/heidiurlich-fotografie-101-sm.jpg
+    bildnummer: 999
 ---
 <section class="padded bg-light text-white capped-width margin-t-2 xs-margin-t-0 center">
   <div class="editable">
@@ -113,9 +123,9 @@ gallery:
 
         {% for item in page.gallery %}
 
-        <a class="gallery-container" href="{{item.pop-up-background_image}}"> 
+        <a class="gallery-container" href="{{item.pop-up-background_image}}" data-sub-html="<h4> {{item.bildnummer}} </h4>"> 
             <img src="{{item.background_image}}" />
-
+            <p> {{ item.bildnummer }} </p>
         </a>
 
         {% endfor %}
