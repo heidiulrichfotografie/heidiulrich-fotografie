@@ -270,6 +270,18 @@ h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@media (max-width: 1242px) {
+  .h1-custom-2 {
+    font-size: calc(0.7em + 6.3vw);
+  }
+}
+
+@media (max-width: 782px) {
+  .h1-custom-2 {
+    font-size: calc(0.3em + 5.6vw);
+  }
+}
+
 .h2-custom-1 {
   font-size: 6.2rem;
   font-family: 'Erica One', sans-serif; 
@@ -796,7 +808,6 @@ header nav a {
   font-size: 2rem;
   font-family: "Share Tech Mono", monospace;
   padding: 0.5rem 1rem ;
-  margin-top: 1rem;
 }
 
 footer a {
@@ -1173,6 +1184,14 @@ hr.short.center {
     font-size: 5rem;
   }
 
+  .h2-custom-1 {
+    font-size: 4.6rem;
+  }
+
+  .email-footer {
+    font-size: 1.7rem;
+  }
+
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1220,6 +1239,23 @@ h2 {
 .pa3 {
   font-size: 3rem;
 }
+
+.h2-custom-1 {
+  font-size: 3.2rem;
+}
+
+.pa6 {
+  position: absolute;
+  top: -5rem;
+  width: 20rem;
+  right: 4rem;
+}
+
+.sm-center { text-align: center;}
+footer nav a {
+  text-align: center;
+}
+footer nav { margin-bottom: 1.4rem;}
 
 }
 
@@ -1273,4 +1309,28 @@ h2 {
     font-size: 1rem;
   }
 
+  .h2-custom-1 {
+    font-size: 2rem;
+  }
+
+
+  .button-text {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: "Erica One", sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark);
+  }
+  .pa6 {
+    position: absolute;
+    top: -5rem;
+    width: 20rem;
+    left: 100%;
+  }
+
+  .email-footer {
+    font-size: 1.2rem;
+  }
+  
 }
