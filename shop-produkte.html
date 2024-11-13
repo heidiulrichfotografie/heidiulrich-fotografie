@@ -79,12 +79,14 @@ produkte:
 
             <section class="bg-produkte">
                 <div class="text-lila center capped-width padded">
-                    <h1> {{ produkt.title }}</h1>
-                    <br />
-                    <img src="{{ produkt.image }}" />
-                    <br /><br />
-                    <p> {{ produkt.description_html }} </p>
-                    <br />
+                    <h1 class=""> {{ produkt.title }}</h1>
+                    <br>
+                    <img src="{{ produkt.image }}">
+                    <br><br>
+                    <div class="left">
+                        <p> {{ produkt.description_html }} </p>
+                    </div>
+                    <br>
                     <div class="grid">
                         <div class="col-3 padded-1"> <img src="{{ produkt.image_1 }}" /> </div>
                         <div class="col-3 padded-1"> <img src="{{ produkt.image_2 }}" /> </div>
