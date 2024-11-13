@@ -951,6 +951,8 @@ footer nav a {
   transform: rotateZ(45deg);
 }
 
+.min-100 { min-width: 100%;}
+
 .burger-button.active .burger-middle{
 /*   transform: rotateZ(270deg); */
   border-color: rgba(0,0,0,0);
@@ -1308,12 +1310,38 @@ footer nav { margin-bottom: 1.4rem;}
   font-size: 2.5rem;
 }
 
+.pa7 {
+  position: absolute;
+  right: -0.4rem;
+  bottom: 0;
+}
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media(max-width:36em) {
+
+  .h2-custom-3 {
+    font-size: 2.5rem;
+  }
+  .h2-custom-2 {
+    font-size: 2.5rem;
+  }
+
+  .pa8 {
+    position: absolute;
+    right: -4rem;
+    transform: rotate(-90deg);
+    bottom: 3rem;
+  }
+
+  .pa7 {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+  }
 
 		.show-xs { display: block; }
 		.hide-xs { display: none;  }
