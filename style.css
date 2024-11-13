@@ -22,6 +22,7 @@ section { position: relative; }
 html { 
   scroll-behavior: smooth ;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  overflow-x: hidden;
 }
 
 
@@ -209,6 +210,7 @@ a.bg-image { display: block;}
 body {
   font-family: 'Erica One', sans-serif;  /* Add your font here */ 
   color: var(--dark-text);
+
 }
 
 h1 {
