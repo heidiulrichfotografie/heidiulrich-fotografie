@@ -1343,6 +1343,17 @@ footer nav { margin-bottom: 1.4rem;}
     bottom: 0;
   }
 
+.xs-margin-t-0 { margin-top: 0;}
+
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
 		.show-xs { display: block; }
 		.hide-xs { display: none;  }
 
