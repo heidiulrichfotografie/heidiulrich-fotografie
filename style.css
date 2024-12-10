@@ -474,7 +474,7 @@ p {
 .pa2 {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 
@@ -519,9 +519,9 @@ p {
 
 .pa8 {
   position: absolute;
-  right: -7rem;
+  right: -9rem;
   transform: rotate(-90deg);
-  bottom: 5rem;
+  bottom: 7rem;
 }
 
 .pa9 {
